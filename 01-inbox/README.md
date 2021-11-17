@@ -5,6 +5,7 @@ x
 ## Features
 
 - setting up a project in VS Code with [Solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) syntax highlighting.
-- creating a compile script for Solidity.
+- creating a compile script for Solidity with solc.
+- testing locally with Mocha, Ganache CLI and web3.
 
 Based on [Ethereum and Solidity: The Complete Developer's Guide](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/) by Stephen Grider (2021).

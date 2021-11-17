@@ -1,0 +1,22 @@
+{
+  "name": "01-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solygambas/ethereum-solidity.git"
+  },
+  "author": "solygambas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solygambas/ethereum-solidity/issues"
+  },
+  "homepage": "https://github.com/solygambas/ethereum-solidity#readme",
+  "dependencies": {
+    "mocha": "^9.1.3"
+  }
+}
