@@ -4,7 +4,7 @@
   "description": "Inbox smart contract Node.js project.",
   "main": "compile.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --timeout 10000"
   },
   "repository": {
     "type": "git",
