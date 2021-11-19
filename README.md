@@ -1,8 +1,9 @@
 # Ethereum & Solidity Projects
 
-This repo is made of 1 project:
+This repo is made of 2 projects:
 
 1. [**Inbox**](#inbox): A small project to understand how to test and deploy smart contracts with Solidity.
+2. [**Lottery**](#lottery): x.
 
 ## <a name="inbox"></a> 1) Inbox
 
@@ -19,5 +20,15 @@ A small project to understand how to test and deploy smart contracts with Solidi
 - deploying locally with web3.
 - deploying to Rinkeby network with hdwallet-provider and Infura API.
 - observing deployment on Etherscan and testing the new contract in Remix.
+
+## <a name="lottery"></a> 2) Lottery
+
+x
+
+[See 02-lottery folder](https://github.com/solygambas/ethereum-solidity/tree/main/02-lottery)
+
+### Features
+
+-
 
 Based on [Ethereum and Solidity: The Complete Developer's Guide](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/) by Stephen Grider (2021).
