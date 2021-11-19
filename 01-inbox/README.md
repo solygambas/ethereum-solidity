@@ -4,10 +4,10 @@ An intro to understand how to test and deploy smart contracts with Solidity.
 
 ## Features
 
-- setting up a project in VS Code with [Solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) syntax highlighting.
+- setting up a project in VS Code with [Solidity syntax highlighting](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity).
 - creating a compile script for Solidity with solc.
 - testing the contract with Mocha.
-- fetching accounts from Ganache CLI.
+- fetching fake accounts from Ganache CLI.
 - deploying locally with web3.
 - deploying to Rinkeby network with hdwallet-provider and Infura API.
 - observing deployment on Etherscan and testing the new contract in Remix.
