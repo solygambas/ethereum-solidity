@@ -1,6 +1,6 @@
 # Inbox
 
-An intro to understand how to test and deploy smart contracts with Solidity.
+A small project to understand how to test and deploy smart contracts with Solidity.
 
 ## Features
 

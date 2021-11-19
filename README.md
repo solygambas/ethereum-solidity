@@ -2,11 +2,11 @@
 
 This repo is made of 1 project:
 
-1. [**Inbox**](#inbox): An intro to understand how to test and deploy smart contracts with Solidity.
+1. [**Inbox**](#inbox): A small project to understand how to test and deploy smart contracts with Solidity.
 
 ## <a name="inbox"></a> 1) Inbox
 
-An intro to understand how to test and deploy smart contracts with Solidity.
+A small project to understand how to test and deploy smart contracts with Solidity.
 
 [See 01-inbox folder](https://github.com/solygambas/ethereum-solidity/tree/main/01-inbox)
 
