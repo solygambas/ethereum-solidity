@@ -7,12 +7,13 @@
 }
 
 .test-site-msg {
-  background-color: rgb(245, 245, 220);
-  border-bottom: 1px solid rgb(221, 221, 221);
-  font-size: 13px;
+  border-bottom: 1px solid #c6dabf;
+  color: #387780;
+  font-size: 1rem;
   line-height: 1.5;
-  padding: 10px 18px;
+  padding: 0.625rem 1.25rem;
   text-align: left;
+  font-weight: bold;
 }
 
 .page-center {
@@ -24,8 +25,8 @@
 }
 
 .alert {
-  border: 1px solid transparent;
-  border-radius: 2px;
+  border: 2px solid transparent;
+  border-radius: 6px;
   color: rgb(47, 47, 47);
   padding: 23px 30px 25px;
   font-size: 1rem;
@@ -33,13 +34,13 @@
 }
 
 .info {
-  border-color: rgb(206, 206, 206);
-  background-color: rgb(190, 227, 248);
+  border-color: #c6dabf;
 }
 
 .error {
-  background-color: rgb(254, 215, 215);
-  border-color: rgb(165, 42, 42);
+  background-color: #e9bcb7;
+  border-color: #6f584b;
+  color: #594236;
 }
 
 .no-margin {
@@ -78,7 +79,7 @@ hr.spacey {
 }
 
 .primaryBtn {
-  background-color: rgb(3, 125, 214);
+  background-color: rgb(67, 97, 238);
 }
 
 .card {

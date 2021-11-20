@@ -25,12 +25,8 @@ function App() {
           console.log(chainId);
           if (chainId === "0x4") {
             setIsRinkebyNetwork(true);
-            setCheckingMetamask(true);
-          } else {
-            console.log("false is running");
-            setIsRinkebyNetwork(false);
-            setCheckingMetamask(true);
           }
+          setCheckingMetamask(true);
           if (web3Instance !== null) {
             // Create contract
           }
@@ -46,28 +42,28 @@ function App() {
 
   return (
     <div className="App">
-      <div className="test-site-msg">Lottery React App - Test-Only</div>
-      {web3 === null && !checkingMetamask && (
-        <div className="page-center">
-          <div className="alert info">
-            <h1 className="no-margin-top">Lottery Contract</h1>
-            <p className="no-margin">
-              Checking for MetaMask Ethereum Provider...
-            </p>
-          </div>
+      <div className="test-site-msg">Lottery - Test-Only</div>
+      {/* {web3 === null && !checkingMetamask && ( */}
+      <div className="page-center">
+        <div className="alert info">
+          <h1 className="no-margin-top">Lottery Contract</h1>
+          <p className="no-margin">
+            Checking for MetaMask Ethereum Provider...
+          </p>
         </div>
-      )}
-      {!web3 && checkingMetamask && !isRinkebyNetwork && (
-        <div className="page-center">
-          <div className="alert error">
-            <h1 className="no-margin-top">Lottery Contract</h1>
-            <p className="no-margin">
-              You must be connected to the <strong>Rinkeby test network</strong>{" "}
-              for Ether transactions made via this app.
-            </p>
-          </div>
+      </div>
+      {/* )} */}
+      {/* {!web3 && checkingMetamask && !isRinkebyNetwork && (*/}
+      {/* <div className="page-center">
+        <div className="alert error">
+          <h1 className="no-margin-top">Lottery Contract</h1>
+          <p className="no-margin">
+            You must be connected to the <strong>Rinkeby test network</strong>{" "}
+            for Ether transactions made via this app.
+          </p>
         </div>
-      )}
+      </div> */}
+      {/* )} */}
     </div>
   );
 }
