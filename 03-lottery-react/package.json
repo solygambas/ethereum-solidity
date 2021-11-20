@@ -2,16 +2,8 @@
   "name": "03-lottery-react",
   "version": "0.1.0",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/solygambas/ethereum-solidity.git"
-  },
   "author": "solygambas",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/solygambas/ethereum-solidity/issues"
-  },
-  "homepage": "https://github.com/solygambas/ethereum-solidity#readme",
   "dependencies": {
     "@metamask/detect-provider": "1.2.0",
     "@testing-library/jest-dom": "^5.11.4",
