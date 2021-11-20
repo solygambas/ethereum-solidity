@@ -3,7 +3,7 @@
 This repo is made of 2 smart contracts:
 
 1. [**Inbox**](#inbox): A small project to understand how to test and deploy smart contracts with Solidity.
-2. [**Lottery**](#lottery): x.
+2. [**Lottery**](#lottery): An Ethereum lottery to build and test a more advanced smart contract.
 
 ## <a name="inbox"></a> 1) Inbox
 
@@ -23,7 +23,7 @@ A small project to understand how to test and deploy smart contracts with Solidi
 
 ## <a name="lottery"></a> 2) Lottery
 
-x
+An Ethereum lottery to build and test a more advanced smart contract.
 
 [See 02-lottery folder](https://github.com/solygambas/ethereum-solidity/tree/main/02-lottery)
 

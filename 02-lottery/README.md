@@ -1,6 +1,6 @@
 # Lottery
 
-x
+An Ethereum lottery to build and test a more advanced smart contract.
 
 ## Features
 
