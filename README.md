@@ -1,9 +1,10 @@
 # Ethereum & Solidity Projects
 
-This repo is made of 2 smart contracts:
+This repo is made of 3 projects:
 
 1. [**Inbox**](#inbox): A small project to understand how to test and deploy smart contracts with Solidity.
 2. [**Lottery**](#lottery): An Ethereum lottery to build and test a more advanced smart contract.
+3. [**Lottery React**](#lotteryreact): A React front-end created around the lottery contract.
 
 ## <a name="inbox"></a> 1) Inbox
 
@@ -36,5 +37,15 @@ An Ethereum lottery to build and test a more advanced smart contract.
 - restricting access with a function modifier.
 - debugging with Remix.
 - writing tests with Mocha and using try-catch assertions.
+
+## <a name="lotteryreact"></a> 3) Lottery React
+
+A React front-end created around the lottery contract.
+
+[See 03-lottery-react folder](https://github.com/solygambas/ethereum-solidity/tree/main/03-lottery-react)
+
+### Features
+
+-
 
 Based on [Ethereum and Solidity: The Complete Developer's Guide](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/) by Stephen Grider (2021).
