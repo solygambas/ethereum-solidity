@@ -45,8 +45,21 @@ A React front-end created around the lottery contract.
 
 [See 03-lottery-react folder](https://github.com/solygambas/ethereum-solidity/tree/main/03-lottery-react)
 
+<p align="center">
+    <a href="https://github.com/solygambas/ethereum-solidity/tree/main/03-lottery-react">
+        <img src="03-lottery-react/screenshot.png">
+    </a>
+</p>
+
 ### Features
 
--
+- setting up a React project.
+- creating a web3 instance and a local contract instance.
+- detecting the MetaMask Ethereum provider with @metamask/detect-provider.
+- enforcing the connection to the Rinkeby test network.
+- rendering contract data.
+- entering the lottery, checking user input and sending a transaction.
+- adding user-friendly notifications.
+- picking a winner.
 
 Based on [Ethereum and Solidity: The Complete Developer's Guide](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/) by Stephen Grider (2021).
