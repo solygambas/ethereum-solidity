@@ -43,7 +43,8 @@ An Ethereum lottery to build and test a more advanced smart contract.
 
 A React front-end created around the lottery contract.
 
-[See Demo deployed on Vercel](https://ethereum-lottery.vercel.app/) ([MetaMask Plugin](https://metamask.io/) is required)
+[See Demo deployed on Vercel](https://ethereum-lottery.vercel.app/)
+([MetaMask Plugin](https://metamask.io/) is required)
 
 [See 03-lottery-react folder](https://github.com/solygambas/ethereum-solidity/tree/main/03-lottery-react)
 

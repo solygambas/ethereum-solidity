@@ -2,7 +2,8 @@
 
 A React front-end created around the lottery contract.
 
-[See Demo deployed on Vercel](https://ethereum-lottery.vercel.app/) ([MetaMask Plugin](https://metamask.io/) is required)
+[See Demo deployed on Vercel](https://ethereum-lottery.vercel.app/) 
+([MetaMask Plugin](https://metamask.io/) is required)
 
 <p align="center">
         <img src="screenshot.png">
