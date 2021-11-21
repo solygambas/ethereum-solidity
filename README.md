@@ -37,6 +37,7 @@ An Ethereum lottery to build and test a more advanced smart contract.
 - restricting access with a function modifier.
 - debugging with Remix.
 - writing tests with Mocha and using try-catch assertions.
+- deploying to Rinkeby network with hdwallet-provider and Infura API.
 
 ## <a name="lotteryreact"></a> 3) Lottery React
 

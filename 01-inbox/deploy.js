@@ -16,9 +16,6 @@ const provider = new HDWalletProvider({
 const web3 = new Web3(provider);
 const message = "Hi there!";
 
-console.log(mnemonicPhrase);
-console.log(network);
-
 const deploy = async () => {
   const accounts = await web3.eth.getAccounts();
   console.log("Attempting to deploy from account", accounts[0]);

@@ -11,5 +11,6 @@ An Ethereum lottery to build and test a more advanced smart contract.
 - restricting access with a function modifier.
 - debugging with Remix.
 - writing tests with Mocha and using try-catch assertions.
+- deploying to Rinkeby network with hdwallet-provider and Infura API.
 
 Based on [Ethereum and Solidity: The Complete Developer's Guide](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/) by Stephen Grider (2021).

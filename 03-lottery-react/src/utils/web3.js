@@ -10,6 +10,7 @@ const initWeb3 = async () => {
   if (provider) {
     console.log("MetaMask Ethereum Provider successfully detected");
     const { ethereum } = window;
+    web3 = new Web3(provider);
     // Handle changes and disconnect
     ethereum.on("chainChanged", (_chainId) => window.location.reload());
     ethereum.on("disconnect", (_error) => window.location.reload());
