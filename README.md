@@ -1,10 +1,11 @@
 # Ethereum & Solidity Projects
 
-This repo is made of 3 projects:
+This repo is made of 4 projects:
 
 1. [**Inbox**](#inbox): A small project to understand how to test and deploy smart contracts with Solidity.
 2. [**Lottery**](#lottery): An Ethereum lottery to build and test a more advanced smart contract.
 3. [**Lottery React**](#lotteryreact): A React front-end created around the lottery contract.
+4. [**Kickstart**](#kickstart): A crowdfunding app using Next.js.
 
 ## <a name="inbox"></a> 1) Inbox
 
@@ -64,5 +65,25 @@ A React front-end created around the lottery contract.
 - entering the lottery, checking user input and sending a transaction.
 - adding user-friendly notifications.
 - picking a winner.
+
+## <a name="kickstart"></a> 4) Kickstart
+
+A crowdfunding app using Next.js.
+
+[See 04-kickstart folder](https://github.com/solygambas/ethereum-solidity/tree/main/04-kickstart)
+
+<!-- <p align="center">
+    <a href="https://github.com/solygambas/ethereum-solidity/tree/main/04-kickstart">
+        <img src="03-lottery-react/screenshot.png">
+    </a>
+</p> -->
+
+### Features
+
+- using struct for request and creating struct instances.
+- understanding the difference between storage and memory.
+- using mappings rather than arrays for performance reasons.
+- deploying a campaign factory and keeping track of deployed campaigns.
+- testing the factory with Remix.
 
 Based on [Ethereum and Solidity: The Complete Developer's Guide](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/) by Stephen Grider (2021).
