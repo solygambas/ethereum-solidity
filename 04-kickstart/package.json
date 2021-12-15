@@ -6,8 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "mocha --timeout 15000"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solygambas/ethereum-solidity.git"
+  },
+  "author": "solygambas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solygambas/ethereum-solidity/issues"
+  },
+  "homepage": "https://github.com/solygambas/ethereum-solidity#readme",
   "dependencies": {
     "@truffle/hdwallet-provider": "^1.5.1",
     "dotenv": "^10.0.0",

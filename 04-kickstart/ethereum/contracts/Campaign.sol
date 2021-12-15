@@ -8,6 +8,10 @@ contract CampaignFactory {
         Campaign newCampaign = new Campaign(minimum, msg.sender);
         deployedCampaigns.push(newCampaign);
     }
+
+    function getDeployedCampaigns() public view returns (Campaign[] memory) {
+        return deployedCampaigns;
+    }
 }
 
 contract Campaign {
