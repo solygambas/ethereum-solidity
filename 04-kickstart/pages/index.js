@@ -1,6 +1,16 @@
+import { useEffect } from "react";
 import Head from "next/head";
+import factory from "../ethereum/factory";
 
 export default function Home() {
+  useEffect(() => {
+    const getCampaigns = async () => {
+      const campaigns = await factory.methods.getDeployedCampaigns().call();
+      console.log(campaigns);
+    };
+    getCampaigns();
+  }, []);
+
   return (
     <div>
       <Head>

@@ -17,5 +17,7 @@ A crowdfunding app using Next.js.
 - testing the contracts with Mocha, Ganache CLI and web3.
 - deploying to Rinkeby network with hdwallet-provider and Infura API.
 - creating a test campaign with Remix and Metamask.
+- handling server and client Web3 instances.
+- fetching deployed campaigns.
 
 Based on [Ethereum and Solidity: The Complete Developer's Guide](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/) by Stephen Grider (2021).
