@@ -2,14 +2,14 @@ import { useEffect } from "react";
 import Head from "next/head";
 import factory from "../ethereum/factory";
 
-export default function Home() {
-  useEffect(() => {
-    const getCampaigns = async () => {
-      const campaigns = await factory.methods.getDeployedCampaigns().call();
-      console.log(campaigns);
-    };
-    getCampaigns();
-  }, []);
+export default function Home({ campaigns }) {
+  // useEffect(() => {
+  //   const getCampaigns = async () => {
+  //     const campaigns = await factory.methods.getDeployedCampaigns().call();
+  //     console.log(campaigns);
+  //   };
+  //   getCampaigns();
+  // }, []);
 
   return (
     <div>
@@ -20,8 +20,13 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>This is the campaign list page</h1>
+        <h1>{campaigns[0]}</h1>
       </main>
     </div>
   );
 }
+
+Home.getInitialProps = async () => {
+  const campaigns = await factory.methods.getDeployedCampaigns().call();
+  return { campaigns };
+};
