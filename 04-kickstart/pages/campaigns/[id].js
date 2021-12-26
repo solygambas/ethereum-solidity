@@ -12,4 +12,9 @@ const Campaign = () => {
   );
 };
 
+Campaign.getInitialProps = async (ctx) => {
+  console.log(ctx.query.id);
+  return {};
+};
+
 export default Campaign;
