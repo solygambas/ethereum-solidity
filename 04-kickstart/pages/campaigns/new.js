@@ -8,9 +8,12 @@ import Layout from "../../components/Layout";
 function CampaignNew() {
   const [minimumContribution, setMinimumContribution] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    setErrorMessage("");
+    setLoading(true);
     try {
       const accounts = await web3.eth.getAccounts();
       await factory.methods
@@ -19,6 +22,7 @@ function CampaignNew() {
     } catch (error) {
       setErrorMessage(error.message);
     }
+    setLoading(false);
   };
 
   return (
@@ -35,7 +39,7 @@ function CampaignNew() {
           />
         </Form.Field>
         <Message error header="Oops!" content={errorMessage} />
-        <Button type="submit" primary>
+        <Button type="submit" primary loading={loading}>
           Create
         </Button>
       </Form>
