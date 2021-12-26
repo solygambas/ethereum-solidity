@@ -93,5 +93,6 @@ A crowdfunding app using Next.js.
 - fetching deployed campaigns with getInitialProps.
 - building an interface with Semantic UI React.
 - handling form to create a new campaign.
+- navigating between pages with Link and useRouter.
 
 Based on [Ethereum and Solidity: The Complete Developer's Guide](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/) by Stephen Grider (2021).
