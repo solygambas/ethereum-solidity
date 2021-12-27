@@ -22,6 +22,7 @@ export default function Home({ campaigns }) {
         </Link>
       ),
       fluid: true,
+      style: { overflowWrap: "break-word" },
     };
   });
 
