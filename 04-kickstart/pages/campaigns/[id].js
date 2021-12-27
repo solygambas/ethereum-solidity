@@ -1,7 +1,9 @@
 import { useRouter } from "next/router";
-import Layout from "../../components/Layout";
 
-const Campaign = () => {
+import Layout from "../../components/Layout";
+import getCampaign from "../../ethereum/campaign";
+
+const CampaignShow = () => {
   const router = useRouter();
   const { id } = router.query;
 
@@ -12,9 +14,16 @@ const Campaign = () => {
   );
 };
 
-Campaign.getInitialProps = async (ctx) => {
-  console.log(ctx.query.id);
-  return {};
+CampaignShow.getInitialProps = async (ctx) => {
+  const campaign = getCampaign(ctx.query.id);
+  const summary = await campaign.methods.getSummary().call();
+  return {
+    minimumContribution: summary[0],
+    balance: summary[1],
+    requestsCount: summary[2],
+    approversCount: summary[3],
+    manager: summary[4],
+  };
 };
 
-export default Campaign;
+export default CampaignShow;
