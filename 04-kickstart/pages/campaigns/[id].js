@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { Card } from "semantic-ui-react";
+import { Card, Grid } from "semantic-ui-react";
 import ContributeForm from "../../components/ContributeForm";
 
 import Layout from "../../components/Layout";
@@ -52,8 +52,14 @@ const CampaignShow = (props) => {
   return (
     <Layout>
       <h3>Campaign Details: {id}</h3>
-      <Card.Group items={items} />
-      <ContributeForm />
+      <Grid>
+        <Grid.Column width={10}>
+          <Card.Group items={items} />
+        </Grid.Column>
+        <Grid.Column width={6}>
+          <ContributeForm />
+        </Grid.Column>
+      </Grid>
     </Layout>
   );
 };

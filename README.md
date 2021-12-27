@@ -92,7 +92,7 @@ A crowdfunding app using Next.js.
 - handling server and client Web3 instances.
 - fetching deployed campaigns with getInitialProps.
 - building an interface with Semantic UI React.
-- handling form to create a new campaign.
+- handling forms to create a new campaign and to contribute.
 - navigating between pages with Link and useRouter.
 - displaying campaign details with Next dynamic routes.
 
