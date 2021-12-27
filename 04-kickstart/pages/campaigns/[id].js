@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { Card } from "semantic-ui-react";
+import ContributeForm from "../../components/ContributeForm";
 
 import Layout from "../../components/Layout";
 import getCampaign from "../../ethereum/campaign";
@@ -52,6 +53,7 @@ const CampaignShow = (props) => {
     <Layout>
       <h3>Campaign Details: {id}</h3>
       <Card.Group items={items} />
+      <ContributeForm />
     </Layout>
   );
 };
