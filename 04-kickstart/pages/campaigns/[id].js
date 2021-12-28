@@ -57,7 +57,7 @@ const CampaignShow = (props) => {
           <Card.Group items={items} />
         </Grid.Column>
         <Grid.Column width={6}>
-          <ContributeForm />
+          <ContributeForm address={id} />
         </Grid.Column>
       </Grid>
     </Layout>
