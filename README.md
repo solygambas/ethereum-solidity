@@ -70,11 +70,14 @@ A React front-end created around the lottery contract.
 
 A crowdfunding app using Next.js.
 
+[See Demo deployed on Vercel](https://crowdcoin-ethereum.vercel.app/)
+([MetaMask Plugin](https://metamask.io/) is required)
+
 [See 04-kickstart folder](https://github.com/solygambas/ethereum-solidity/tree/main/04-kickstart)
 
 <p align="center">
     <a href="https://github.com/solygambas/ethereum-solidity/tree/main/04-kickstart">
-        <img src="03-lottery-react/screenshot.png">
+        <img src="04-kickstart/screenshot.png">
     </a>
 </p>
 
