@@ -13,10 +13,14 @@ function NewRequest() {
   const [amount, setAmount] = useState("");
   const [description, setDescription] = useState("");
   const [recipient, setRecipient] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const onSubmit = async (e) => {
     e.preventDefault();
     const campaign = getCampaign(id);
+    setLoading(true);
+    setErrorMessage("");
     try {
       const accounts = await web3.eth.getAccounts();
       await campaign.methods
@@ -26,15 +30,20 @@ function NewRequest() {
           recipient
         )
         .send({ from: accounts[0] });
+      router.push(`/campaigns/${id}/requests`);
     } catch (error) {
-      console.log(error.message);
+      setErrorMessage(error.message);
     }
+    setLoading(false);
   };
 
   return (
     <Layout>
+      <Link href={`/campaigns/${id}/requests`}>
+        <a>Back</a>
+      </Link>
       <h3>Create a Request</h3>
-      <Form onSubmit={onSubmit}>
+      <Form onSubmit={onSubmit} error={!!errorMessage}>
         <Form.Field>
           <label>Description</label>
           <Input
@@ -53,7 +62,10 @@ function NewRequest() {
             onChange={(e) => setRecipient(e.target.value)}
           />
         </Form.Field>
-        <Button primary>Create</Button>
+        <Message error header="Oops!" content={errorMessage} />
+        <Button primary loading={loading}>
+          Create
+        </Button>
       </Form>
     </Layout>
   );
