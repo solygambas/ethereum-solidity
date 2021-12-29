@@ -5,7 +5,7 @@ import getCampaign from "../../../../ethereum/campaign";
 import Layout from "../../../../components/Layout";
 import RequestRow from "../../../../components/RequestRow";
 
-function RequestIndex({ id, requests, requestCount }) {
+function RequestIndex({ id, requests, requestCount, approversCount }) {
   const { Header, Row, HeaderCell, Body } = Table;
   return (
     <Layout>
@@ -29,7 +29,13 @@ function RequestIndex({ id, requests, requestCount }) {
         </Header>
         <Body>
           {requests.map((request, index) => (
-            <RequestRow key={index} request={request} address={id} id={index} />
+            <RequestRow
+              key={index}
+              request={request}
+              address={id}
+              id={index}
+              approversCount={approversCount}
+            />
           ))}
         </Body>
       </Table>
@@ -41,6 +47,7 @@ RequestIndex.getInitialProps = async (ctx) => {
   const { id } = ctx.query;
   const campaign = getCampaign(id);
   const requestCount = await campaign.methods.getRequestsCount().call();
+  const approversCount = await campaign.methods.approversCount().call();
   const requests = await Promise.all(
     Array(parseInt(requestCount))
       .fill()
@@ -48,7 +55,7 @@ RequestIndex.getInitialProps = async (ctx) => {
         return campaign.methods.requests(index).call();
       })
   );
-  return { id, requests, requestCount };
+  return { id, requests, requestCount, approversCount };
 };
 
 export default RequestIndex;
