@@ -2,9 +2,9 @@
 
 A crowdfunding app using Next.js.
 
-<!-- <p align="center">
+<p align="center">
         <img src="screenshot.png">
-</p> -->
+</p>
 
 ## Features
 

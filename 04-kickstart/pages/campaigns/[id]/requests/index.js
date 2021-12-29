@@ -9,10 +9,15 @@ function RequestIndex({ id, requests, requestCount, approversCount }) {
   const { Header, Row, HeaderCell, Body } = Table;
   return (
     <Layout>
+      <Link href={`/campaigns/${id}`}>
+        <a>Back</a>
+      </Link>
       <h3>Requests</h3>
       <Link href={`/campaigns/${id}/requests/new`}>
         <a>
-          <Button primary>Add Request</Button>
+          <Button primary floated="right" style={{ marginBottom: 10 }}>
+            Add Request
+          </Button>
         </a>
       </Link>
       <Table>
@@ -39,6 +44,7 @@ function RequestIndex({ id, requests, requestCount, approversCount }) {
           ))}
         </Body>
       </Table>
+      <div>Found {requestCount} requests</div>
     </Layout>
   );
 }

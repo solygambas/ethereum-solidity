@@ -72,11 +72,11 @@ A crowdfunding app using Next.js.
 
 [See 04-kickstart folder](https://github.com/solygambas/ethereum-solidity/tree/main/04-kickstart)
 
-<!-- <p align="center">
+<p align="center">
     <a href="https://github.com/solygambas/ethereum-solidity/tree/main/04-kickstart">
         <img src="03-lottery-react/screenshot.png">
     </a>
-</p> -->
+</p>
 
 ### Features
 
