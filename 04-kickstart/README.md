@@ -23,5 +23,6 @@ A crowdfunding app using Next.js.
 - handling forms to create a new campaign and to contribute.
 - navigating between pages with Link and useRouter.
 - displaying campaign details with Next dynamic routes.
+- listing out all the requests and adding a new one.
 
 Based on [Ethereum and Solidity: The Complete Developer's Guide](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/) by Stephen Grider (2021).
