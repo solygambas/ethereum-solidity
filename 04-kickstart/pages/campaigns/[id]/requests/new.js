@@ -10,37 +10,48 @@ import Layout from "../../../../components/Layout";
 function NewRequest() {
   const router = useRouter();
   const { id } = router.query;
-  const [value, setValue] = useState("");
+  const [amount, setAmount] = useState("");
   const [description, setDescription] = useState("");
   const [recipient, setRecipient] = useState("");
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    const campaign = getCampaign(id);
+    try {
+      const accounts = await web3.eth.getAccounts();
+      await campaign.methods
+        .createRequest(
+          description,
+          web3.utils.toWei(amount, "ether"),
+          recipient
+        )
+        .send({ from: accounts[0] });
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
 
   return (
     <Layout>
       <h3>Create a Request</h3>
-      <Form>
+      <Form onSubmit={onSubmit}>
         <Form.Field>
-          <label
+          <label>Description</label>
+          <Input
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-          >
-            Description
-          </label>
-          <Input />
+          />
         </Form.Field>
         <Form.Field>
-          <label value={value} onChange={(e) => setValue(e.target.value)}>
-            Value in Ether
-          </label>
-          <Input />
+          <label>Value in Ether</label>
+          <Input value={amount} onChange={(e) => setAmount(e.target.value)} />
         </Form.Field>
         <Form.Field>
-          <label
+          <label>Recipient</label>
+          <Input
             value={recipient}
             onChange={(e) => setRecipient(e.target.value)}
-          >
-            Recipient
-          </label>
-          <Input />
+          />
         </Form.Field>
         <Button primary>Create</Button>
       </Form>
