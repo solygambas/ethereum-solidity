@@ -85,8 +85,8 @@ function CampaignNew() {
       <h3>Create a Campaign</h3>
       {!checkingMetaMask && (
         <p>
-          MetaMask is required to run this app! Please install MetaMask and then
-          refresh this page.
+          MetaMask is required to create a campaign! Please install MetaMask and
+          then refresh this page.
         </p>
       )}
       {checkingMetaMask && !isRinkebyNetwork && (

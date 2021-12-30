@@ -6,6 +6,8 @@ if (typeof window !== "undefined" && typeof window.ethereum !== "undefined") {
   // we are in the browser and metamask is running: make sure the same version of web3 is used
   // reference: https://docs.metamask.io/guide/provider-migration.html#replacing-window-web3
   web3 = new Web3(window.ethereum);
+  window.ethereum.on("chainChanged", (_chainId) => window.location.reload());
+  window.ethereum.on("disconnect", (_error) => window.location.reload());
 } else {
   // we are on the server OR the user is not running metamask
   const provider = new Web3.providers.HttpProvider(
