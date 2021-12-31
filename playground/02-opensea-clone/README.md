@@ -1,6 +1,6 @@
 # OpenSea Clone
 
-An NFT marketplace.
+An NFT marketplace using Moralis.
 
 <!-- [See Demo deployed on Vercel](https://crowdcoin-ethereum.vercel.app/)
 ([MetaMask Plugin](https://metamask.io/) is required) -->
