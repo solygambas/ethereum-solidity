@@ -14,5 +14,6 @@ An NFT marketplace using Polygon and Next.js.
 - setting up a Next.js project with Tailwind CSS.
 - creating a Ethereum development environment with Hardat.
 - coding the NFT and the market smart contracts with OpenZeppelin.
+- testing the contracts with Chai and Ethers.
 
 Based on [How to Build a Full Stack NFT Marketplace on Ethereum with Polygon and Next.js](https://www.youtube.com/watch?v=GKJBEEXUha0) by Nader Dabit (2021).
