@@ -2,7 +2,6 @@ require("@nomiclabs/hardhat-waffle");
 const fs = require("fs");
 
 const privateKey = fs.readFileSync(".secret").toString();
-const projectId = "189b9adee6b048c09347d530decbe8ff";
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -26,11 +25,11 @@ module.exports = {
       chainId: 1337,
     },
     mumbai: {
-      url: `https://polygon-mumbai.infura.io/v3/${projectId}`,
+      url: "https://matic-mumbai.chainstacklabs.com",
       accounts: [privateKey],
     },
-    mainnet: {
-      url: `https://polygon-mainnet.infura.io/v3/${projectId}`,
+    matic: {
+      url: "https://rpc-mainnet.maticvigil.com",
       accounts: [privateKey],
     },
   },

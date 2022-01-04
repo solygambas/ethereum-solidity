@@ -4,9 +4,15 @@
 // When running the script with `npx hardhat run <script>` you'll find the Hardhat
 // Runtime Environment's members available in the global scope.
 
+// local deployment
 // 1) to run our node: npx hardhat node
 // 2) to deploy locally: npx hardhat run scripts/deploy.js --network localhost
 // 3) use metamask to connect to local network and import one of the given accounts with its private key
+
+// deployment to Matic Mumbai Testnet
+// 1) add Matic Mumbai Testnet to MetaMask https://docs.polygon.technology/docs/develop/network-details/network
+// 2) send Matic to your account https://faucet.polygon.technology/
+// 3) run: npx hardhat run scripts/deploy.js --network mumbai
 
 const hre = require("hardhat");
 
