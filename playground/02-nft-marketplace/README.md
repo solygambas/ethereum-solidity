@@ -19,5 +19,6 @@ An NFT marketplace using Polygon and Next.js.
 - supporting multiple providers with Web3Modal.
 - deploying the contracts locally with Hardhat.
 - storing files and metadata on IPFS with Infura API.
+- displaying owned, created and sold digital assets.
 
 Based on [How to Build a Full Stack NFT Marketplace on Ethereum with Polygon and Next.js](https://www.youtube.com/watch?v=GKJBEEXUha0) by Nader Dabit (2021).
