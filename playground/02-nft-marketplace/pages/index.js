@@ -15,7 +15,10 @@ export default function Home() {
   const [loadingState, setLoadingState] = useState("not-loaded");
 
   async function loadNFTs() {
-    const provider = new ethers.providers.JsonRpcProvider(); // generic provider
+    const provider = new ethers.providers.JsonRpcProvider(); // generic provider (local)
+    // const provider = new ethers.providers.JsonRpcProvider(
+    //   "https://rpc-mumbai.matic.today"
+    // ); // might be slow or causing errors, rather use Infura API
     const tokenContract = new ethers.Contract(nftaddress, NFT.abi, provider);
     const marketContract = new ethers.Contract(
       nftmarketaddress,

@@ -2,12 +2,9 @@
 
 An NFT marketplace using Polygon and Next.js.
 
-<!-- [See Demo deployed on Vercel](https://crowdcoin-ethereum.vercel.app/)
-([MetaMask Plugin](https://metamask.io/) is required) -->
-
-<!-- <p align="center">
+<p align="center">
         <img src="screenshot.png">
-</p> -->
+</p>
 
 ## Features
 
