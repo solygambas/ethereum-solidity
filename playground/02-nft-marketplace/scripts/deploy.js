@@ -3,6 +3,10 @@
 //
 // When running the script with `npx hardhat run <script>` you'll find the Hardhat
 // Runtime Environment's members available in the global scope.
+
+// 1) to run our node: npx hardhat node
+// 2) to deploy locally: npx hardhat run scripts/deploy.js --network localhost
+
 const hre = require("hardhat");
 
 async function main() {
@@ -13,13 +17,16 @@ async function main() {
   // manually to make sure everything is compiled
   // await hre.run('compile');
 
-  // We get the contract to deploy
-  const Greeter = await hre.ethers.getContractFactory("Greeter");
-  const greeter = await Greeter.deploy("Hello, Hardhat!");
+  // We get the contracts to deploy
+  const NFTMarket = await hre.ethers.getContractFactory("NFTMarket");
+  const nftmarket = await NFTMarket.deploy();
+  await nftmarket.deployed();
+  console.log("NFTMarket deployed to:", nftmarket.address);
 
-  await greeter.deployed();
-
-  console.log("Greeter deployed to:", greeter.address);
+  const NFT = await hre.ethers.getContractFactory("NFT");
+  const nft = await NFT.deploy(nftmarket.address);
+  await nft.deployed();
+  console.log("NFT deployed to:", nft.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
