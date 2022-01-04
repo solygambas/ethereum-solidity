@@ -17,6 +17,7 @@ An NFT marketplace using Polygon and Next.js.
 - testing the contracts with Chai and Ethers.
 - fetching NFTs with Axios.
 - supporting multiple providers with Web3Modal.
-- deploying our contracts locally with Hardhat.
+- deploying the contracts locally with Hardhat.
+- storing files and metadata on IPFS with Infura API.
 
 Based on [How to Build a Full Stack NFT Marketplace on Ethereum with Polygon and Next.js](https://www.youtube.com/watch?v=GKJBEEXUha0) by Nader Dabit (2021).

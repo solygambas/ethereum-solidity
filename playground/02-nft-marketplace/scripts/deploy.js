@@ -6,6 +6,7 @@
 
 // 1) to run our node: npx hardhat node
 // 2) to deploy locally: npx hardhat run scripts/deploy.js --network localhost
+// 3) use metamask to connect to local network and import one of the given accounts with its private key
 
 const hre = require("hardhat");
 

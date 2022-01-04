@@ -3,11 +3,12 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Web3Modal from "web3modal";
 
-import { nftaddress, nftmarketaddress } from "../config";
-
 // run: npx hardhat compile
 import NFT from "../artifacts/contracts/NFT.sol/NFT.json";
 import Market from "../artifacts/contracts/NFTMarket.sol/NFTMarket.json";
+
+const nftaddress = process.env.NEXT_PUBLIC_NFT_ADDRESS;
+const nftmarketaddress = process.env.NEXT_PUBLIC_NFT_MARKET_ADDRESS;
 
 export default function Home() {
   const [nfts, setNfts] = useState([]);
@@ -24,7 +25,7 @@ export default function Home() {
     const data = await marketContract.fetchMarketItems();
     const items = await Promise.all(
       data.map(async (i) => {
-        const tokenUri = await tokenContract.tokenUri(i.tokenId);
+        const tokenUri = await tokenContract.tokenURI(i.tokenId);
         const meta = await axios.get(tokenUri);
         let price = ethers.utils.formatUnits(i.price.toString(), "ether");
         let item = {
