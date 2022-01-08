@@ -21,4 +21,9 @@ module.exports = {
   paths: {
     artifacts: "./src/artifacts",
   },
+  networks: {
+    hardhat: {
+      chainId: 1337,
+    },
+  },
 };

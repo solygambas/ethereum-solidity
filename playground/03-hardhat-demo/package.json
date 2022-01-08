@@ -16,18 +16,18 @@
     "@metamask/detect-provider": "^1.2.0",
     "@nomiclabs/hardhat-web3": "^2.0.0",
     "@openzeppelin/contracts": "^4.0.0",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
     "@typechain/ethers-v5": "^6.0.5",
     "ethers": "^5.0.32",
     "hardhat-typechain": "^0.3.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
+    "react-scripts": "5.0.0",
     "ts-generator": "^0.1.1",
     "typechain": "^4.0.3",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^2.1.3"
   },
   "scripts": {
     "start": "react-scripts start",

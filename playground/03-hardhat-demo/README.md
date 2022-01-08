@@ -5,11 +5,14 @@ This project demonstrates a basic Hardhat use case. It comes with a sample contr
 Try running some of the following tasks:
 
 ```shell
+npx hardhat
 npx hardhat accounts
 npx hardhat compile
 npx hardhat clean
 npx hardhat test
 npx hardhat node
-node scripts/sample-script.js
+node scripts/deploy.js --network localhost
 npx hardhat help
 ```
+
+Based on [The Complete Guide to Full Stack Ethereum Development](https://www.youtube.com/watch?v=a0osIaAOFSE) by Nader Dabit (2021).
