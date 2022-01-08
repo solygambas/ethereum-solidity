@@ -1,17 +1,8 @@
 {
   "name": "03-hardhat-demo",
   "version": "1.0.0",
-  "description": "",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/solygambas/ethereum-solidity.git"
-  },
   "author": "solygambas",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/solygambas/ethereum-solidity/issues"
-  },
-  "homepage": "https://github.com/solygambas/ethereum-solidity#readme",
   "dependencies": {
     "@metamask/detect-provider": "^1.2.0",
     "@nomiclabs/hardhat-web3": "^2.0.0",
