@@ -1,4 +1,8 @@
 require("@nomiclabs/hardhat-waffle");
+const fs = require("fs");
+
+const projectKey = fs.readFileSync(".project").toString();
+const privateKey = fs.readFileSync(".secret").toString();
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -24,6 +28,10 @@ module.exports = {
   networks: {
     hardhat: {
       chainId: 1337,
+    },
+    ropsten: {
+      url: `https://ropsten.infura.io/v3/${projectKey}`,
+      accounts: [`0x${privateKey}`],
     },
   },
 };
