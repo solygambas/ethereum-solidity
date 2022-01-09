@@ -21,8 +21,8 @@ Try running some of the following tasks:
 npx hardhat
 npx hardhat compile
 npx hardhat node
-node scripts/deploy.js --network localhost
-node scripts/deploy.js --network ropsten
+npx hardhat run scripts/deploy.js --network localhost
+npx hardhat run scripts/deploy.js --network ropsten
 ```
 
 Based on [The Complete Guide to Full Stack Ethereum Development](https://www.youtube.com/watch?v=a0osIaAOFSE) by Nader Dabit (2021).
