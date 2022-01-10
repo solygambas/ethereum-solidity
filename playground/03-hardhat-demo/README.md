@@ -12,8 +12,10 @@ This project demonstrates a basic Hardhat use case. It comes with a sample contr
 - deploying to Ropsten, a live test network, with Infura API.
 - checking deployment with [Etherscan](https://ropsten.etherscan.io/).
 - creating a Token contract and the associated front end.
+- creating ERC20 Tokens like [popular cryptocurrencies](https://www.finder.com/erc20-tokens) with OpenZeppelin.
+- testing the contract in [Remix](https://remix.ethereum.org/).
 
-## Hardhat commands
+## Hardhat Commands
 
 Try running some of the following tasks:
 
