@@ -1,11 +1,13 @@
 # Ethereum & Solidity Projects
 
-This repo is made of 4 projects:
+4 blockchain applications using Ethereum, Solidity, React and Next.js.
 
-1. [**Inbox**](#inbox): A small project to understand how to test and deploy smart contracts with Solidity.
-2. [**Lottery**](#lottery): An Ethereum lottery to build and test a more advanced smart contract.
-3. [**Lottery React**](#lotteryreact): A React front-end created around the lottery contract.
-4. [**Kickstart**](#kickstart): A crowdfunding app using Next.js.
+| #   | Project                           | Description                                           |
+| --- | --------------------------------- | ----------------------------------------------------- |
+| 01  | [**Inbox**](#inbox) | A small project to understand how to test and deploy smart contracts with Solidity.               |
+| 02  | [**Lottery**](#lottery)        | An Ethereum lottery to build and test a more advanced smart contract.           |
+| 03  | [**Lottery React**](#lotteryreact)     | A React front-end created around the lottery contract.                                 |
+| 04  | [**Kickstart**](#kickstart)    | A crowdfunding app using Next.js.                     |
 
 ## <a name="inbox"></a> 1) Inbox
 
