@@ -2,18 +2,18 @@
 
 4 blockchain applications using Ethereum, Solidity, React and Next.js.
 
-| #   | Project                           | Description                                           |
-| --- | --------------------------------- | ----------------------------------------------------- |
-| 01  | [**Inbox**](#inbox) | A small project to understand how to test and deploy smart contracts with Solidity.               |
-| 02  | [**Lottery**](#lottery)        | An Ethereum lottery to build and test a more advanced smart contract.           |
-| 03  | [**Lottery React**](#lotteryreact)     | A React front-end created around the lottery contract.                                 |
-| 04  | [**Kickstart**](#kickstart)    | A crowdfunding app using Next.js.                     |
+| #   | Project                            | Description                                                                         |
+| --- | ---------------------------------- | ----------------------------------------------------------------------------------- |
+| 01  | [**Inbox**](#inbox)                | A small project to understand how to test and deploy smart contracts with Solidity. |
+| 02  | [**Lottery**](#lottery)            | An Ethereum lottery to build and test a more advanced smart contract.               |
+| 03  | [**Lottery React**](#lotteryreact) | A React front-end created around the lottery contract.                              |
+| 04  | [**Kickstart**](#kickstart)        | A crowdfunding app using Next.js.                                                   |
 
 ## <a name="inbox"></a> 1) Inbox
 
 A small project to understand how to test and deploy smart contracts with Solidity.
 
-[See 01-inbox folder](https://github.com/solygambas/ethereum-solidity/tree/main/01-inbox)
+[See 01-inbox folder](01-inbox)
 
 ### Features
 
@@ -29,7 +29,7 @@ A small project to understand how to test and deploy smart contracts with Solidi
 
 An Ethereum lottery to build and test a more advanced smart contract.
 
-[See 02-lottery folder](https://github.com/solygambas/ethereum-solidity/tree/main/02-lottery)
+[See 02-lottery folder](02-lottery)
 
 ### Features
 
@@ -49,10 +49,10 @@ A React front-end created around the lottery contract.
 [See Demo deployed on Vercel](https://ethereum-lottery.vercel.app/)
 ([MetaMask Plugin](https://metamask.io/) is required)
 
-[See 03-lottery-react folder](https://github.com/solygambas/ethereum-solidity/tree/main/03-lottery-react)
+[See 03-lottery-react folder](03-lottery-react)
 
 <p align="center">
-    <a href="https://github.com/solygambas/ethereum-solidity/tree/main/03-lottery-react">
+    <a href="03-lottery-react">
         <img src="03-lottery-react/screenshot.png">
     </a>
 </p>
@@ -75,10 +75,10 @@ A crowdfunding app using Next.js.
 [See Demo deployed on Vercel](https://crowdcoin-ethereum.vercel.app/)
 ([MetaMask Plugin](https://metamask.io/) is required)
 
-[See 04-kickstart folder](https://github.com/solygambas/ethereum-solidity/tree/main/04-kickstart)
+[See 04-kickstart folder](04-kickstart)
 
 <p align="center">
-    <a href="https://github.com/solygambas/ethereum-solidity/tree/main/04-kickstart">
+    <a href="04-kickstart">
         <img src="04-kickstart/screenshot.png">
     </a>
 </p>
