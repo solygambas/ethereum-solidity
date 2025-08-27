@@ -2,7 +2,6 @@
 
 A crowdfunding app using Next.js.
 
-[See Demo deployed on Vercel](https://crowdcoin-ethereum.vercel.app/)
 ([MetaMask Plugin](https://metamask.io/) is required)
 
 <p align="center">

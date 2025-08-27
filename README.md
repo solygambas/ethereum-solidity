@@ -72,7 +72,6 @@ A React front-end created around the lottery contract.
 
 A crowdfunding app using Next.js.
 
-[See Demo deployed on Vercel](https://crowdcoin-ethereum.vercel.app/)
 ([MetaMask Plugin](https://metamask.io/) is required)
 
 [See 04-kickstart folder](04-kickstart)
